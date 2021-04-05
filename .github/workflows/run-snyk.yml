@@ -6,7 +6,7 @@ on:
 jobs:
   snyk:
     runs-on: ubuntu-latest
-    name: A job to push semgrep baseline findings to GitHub
+    name: A job to push snyk findings to GitHub
     steps:
       - uses: actions/checkout@v2
       - uses: snyk/actions/setup@master
