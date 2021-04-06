@@ -1,5 +1,9 @@
 plugins {
-    `java-library`
+    java
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
@@ -9,9 +13,4 @@ dependencies {
     implementation("commons-validator:commons-validator:1.4.0")
     implementation("org.apache.velocity:velocity:1.7")
     implementation("org.springframework:spring-core:3.0.0.RELEASE")
-}
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
 }
