@@ -1,0 +1,4 @@
+- id: snyk
+  name: snyk
+  entry: snyk
+  language: node

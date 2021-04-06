@@ -1,0 +1,7 @@
+repos:
+-   repo: https://github.com/pierre-ernst/snyk-test-data 
+    hooks:
+    -   id: snyk
+        types: [file]
+        files: (pom\.xml|build\.gradle|build\.gradle\.kts|requirements\.txt)$
+        args: ['test']
