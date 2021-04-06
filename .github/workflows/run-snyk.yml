@@ -9,6 +9,17 @@ jobs:
     name: A job to push snyk findings to GitHub
     steps:
       - uses: actions/checkout@v2
+
+      - name: Install Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9.1
+
+      - name: Python Dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+
       - uses: snyk/actions/setup@master
       - name: Snyk Test
         run: snyk test --sarif-file-output=snyk-sarif.json
