@@ -1,4 +1,0 @@
-- id: snyk
-  name: Snyk
-  entry: snyk test
-  language: node

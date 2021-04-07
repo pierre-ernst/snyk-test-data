@@ -1,8 +1,5 @@
 repos:
-- repo: https://github.com/pierre-ernst/snyk-test-data 
-  rev: maven 
+- repo: https://github.com/pierre-ernst/snyk
+  rev: v1.528.0-SNAPSHOT
   hooks:
     - id: snyk
-      types: [file]
-      files: ^(pom\.xml|build\.gradle|build\.gradle\.kts|requirements\.txt)$
-      args: []
