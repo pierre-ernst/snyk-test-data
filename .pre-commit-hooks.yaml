@@ -1,4 +1,4 @@
 - id: snyk
-  name: snyk
-  entry: snyk
+  name: Snyk
+  entry: snyk test
   language: node
